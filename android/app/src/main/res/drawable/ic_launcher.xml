@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Initial Lab launcher mark: laboratory flask on a deep navy field. -->
+    <path
+        android:fillColor="#10233F"
+        android:pathData="M54,4 A50,50 0,1 1,54 104 A50,50 0,1 1,54 4 Z" />
+
+    <path
+        android:fillColor="#163B60"
+        android:pathData="M54,11 A43,43 0,1 1,54 97 A43,43 0,1 1,54 11 Z" />
+
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#56D8E8"
+        android:strokeWidth="5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M43,27 L65,27 M47,27 L47,45 L31,72 C27,79 32,86 40,86 L68,86 C76,86 81,79 77,72 L61,45 L61,27" />
+
+    <path
+        android:fillColor="#56D8E8"
+        android:pathData="M38,70 L70,70 L76,79 C77,82 74,84 70,84 L38,84 C34,84 31,82 33,79 Z" />
+
+    <path
+        android:fillColor="#F4FBFF"
+        android:pathData="M43,62 A3.5,3.5 0,1 1,43 69 A3.5,3.5 0,1 1,43 62 Z M56,54 A2.8,2.8 0,1 1,56 59.6 A2.8,2.8 0,1 1,56 54 Z M65,64 A2.5,2.5 0,1 1,65 69 A2.5,2.5 0,1 1,65 64 Z" />
+
+    <path
+        android:fillColor="#F4FBFF"
+        android:pathData="M28,35 A3,3 0,1 1,28 41 A3,3 0,1 1,28 35 Z M78,34 A3,3 0,1 1,78 40 A3,3 0,1 1,78 34 Z" />
+</vector>
