@@ -1,0 +1,10 @@
+USE lab_logbook;
+ALTER TABLE alat ADD COLUMN IF NOT EXISTS status_kalibrasi ENUM('Terkalibrasi','Belum Kalibrasi','Kadaluarsa') NOT NULL DEFAULT 'Belum Kalibrasi';
+ALTER TABLE alat ADD COLUMN IF NOT EXISTS tanggal_kalibrasi DATE NULL;
+ALTER TABLE alat ADD COLUMN IF NOT EXISTS kondisi_alat ENUM('Baik','Baik dengan catatan','Perlu pemeriksaan','Rusak') NOT NULL DEFAULT 'Baik';
+ALTER TABLE alat ADD COLUMN IF NOT EXISTS interval_kalibrasi_bulan INT UNSIGNED NOT NULL DEFAULT 12;
+ALTER TABLE alat ADD COLUMN IF NOT EXISTS nomor_sertifikat VARCHAR(100) NOT NULL DEFAULT '';
+ALTER TABLE alat ADD COLUMN IF NOT EXISTS merk_tipe VARCHAR(150) NOT NULL DEFAULT '';
+ALTER TABLE alat ADD COLUMN IF NOT EXISTS tahun_perolehan YEAR NULL;
+ALTER TABLE alat ADD COLUMN IF NOT EXISTS catatan TEXT NULL;
+CREATE INDEX IF NOT EXISTS idx_alat_kalibrasi ON alat(status_kalibrasi,tanggal_kalibrasi);
